@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intro</title>
+    <style type="text/css">
+        /* * {
+            color: red;
+            color: blue;
+        } */
+
+        selector1 {
+            name: value;
+            name: value;
+            name: value;
+        }
+
+        selector2 {
+            name: value;
+            name: value;
+            name: value;
+        }
+
+        .titleBold {
+            color: red;
+        }
+
+        b.titleBold {
+            color: blue;
+        }
+
+        h1 > b.titleBold {
+            color: yellow;
+        }
+
+        h1 b.titleBold {
+            color: green;
+        }
+
+        /* h1 {
+            color: chartreuse;
+        }
+
+        .p {
+            color: red;
+        }
+
+        .a {
+            color: cyan;
+        } */
+
+        /* #title {
+            color: red;
+        } */
+
+        /* div > p {
+            color: red;
+        } */
+
+        /* li > span {
+            color: red;
+        } */
+
+        /* body > ul > li > a > ul > li > div >  p > span {
+            color: red;
+        } */
+
+        /* ul > li > a {
+            color: blue;
+        } */
+
+        /* ul li ul li div {
+            color: green;
+        } */
+
+        /* span + b {
+            color: red;
+        } */
+
+        /* span ~ b {
+            color: red;
+        } */
+
+        /* [my-attr] {
+            color: red;
+        } */
+
+        /* [my-attr="B"] {
+            color: red;
+        } */
+
+        /* [my-attr^="C"] { all classes with C
+            color: red;
+        } */
+
+        /* [my-attr$="rap"] { all classes with rap
+            color: red;
+        } */
+
+        /* [my-attr*="v"] { all classes content letter v
+            color: red;
+        } */
+
+        /* ul > li:first-child {
+            color: red;
+        }
+
+        ul > li:last-child {
+            color: blue;
+        }
+
+        ul > li:nth-child(2) {
+            color: green;
+        } */
+        b[my-attr*="r"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><span>Test 1</span></li>
+        <li><span>Test 2</span></li>
+        <li><span>Test 3</span></li>
+        <li><span>Test 4</span></li>
+    </ul>
+
+
+    <h1 id="title" class="p a t k z"><b class="titleBold">CSS Intro</b></h1>
+    <span>Inline</span>
+    <p><span>Lorem ipsum dolor</span>, <b my-attr="C-A-advance">sit amet consectetur adipisicing elit</b>. <i>Ullam enim ratione amet neque ducimus</i> quod ea quas
+        iusto repellendus molestias, assumenda <b my-attr="C-B-rap">Quis ea atque unde sit obcaecati corporis</b> quibusdam aspernatur quia soluta ipsum cumque facilis nemo, est dolore
+        non consequuntur. Natus, repellendus unde. <b my-attr="B-rap">Quis ea atque unde sit obcaecati corporis</b> necessitatibus. <strong>Dolorem,
+        voluptate ipsa cupiditate</strong> asperiores vero soluta obcaecati aut tempore sunt magni iure expedita quas architecto
+        sed omnis repudiandae, placeat nisi odio esse eaque maiores alias dolores et. <i>Officia aspernatur odio</i>
+        consequuntur quia consequatur ipsam <b my-attr="C-B">Quis ea atque unde sit obcaecati corporis</b> magni aut expedita nesciunt, laboriosam fugiat sunt distinctio iusto quis
+        voluptatum! Vero numquam aliquam quo consequuntur fugit voluptatem maiores sint ut.</p>
+        <hr>
+        <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam enim ratione amet neque ducimus quod ea quas
+            iusto repellendus molestias, assumenda quibusdam aspernatur quia soluta ipsum cumque facilis nemo, est dolore
+            non consequuntur. Natus, repellendus unde. Quis ea atque unde sit obcaecati corporis necessitatibus. Dolorem,
+            voluptate ipsa cupiditate asperiores vero soluta obcaecati aut tempore sunt magni iure expedita quas architecto
+            sed omnis repudiandae, placeat nisi odio esse eaque maiores alias dolores et. Officia aspernatur odio
+            consequuntur quia consequatur ipsam magni aut expedita nesciunt, laboriosam fugiat sunt distinctio iusto quis
+            voluptatum! Vero numquam aliquam quo consequuntur fugit voluptatem maiores sint ut.</p>
+
+    <ul>
+        <li><a href="/" title="Test 1">Test 1</a></li>
+        <li><a href="/" title="Test 2">Test 2
+                <ul>
+                    <li><span>Text 1</span></li>
+                    <li><span>Text 2</span></li>
+                    <li><span>Text 3</span>
+                        <div>
+                            <h2>Title</h2>
+                            <p><span>Lorem ipsum dolor sit</span> amet consectetur adipisicing elit. Vitae minus fuga consectetur
+                                ratione sunt asperiores minima aliquid. Harum minus voluptates suscipit natus! Sit
+                                dignissimos animi, maiores quaerat similique natus dolores!</p>
+                        </div>
+                    </li>
+                    <li><span>Text 4</span></li>
+                    <li><span>Text 5</span></li>
+                    <li><span>Text 6</span></li>
+                </ul>
+            </a></li>
+        <li><a href="/" title="Test 3"><h2>Test 3</h2></a></li>
+        <li><a href="/" title="Test 4">Test 4</a></li>
+        <li><a href="/" title="Test 5">Test 5</a></li>
+        <li><span>Test 6</span></li>
+    </ul>
+
+    <div>
+        <h1>
+            <Title></Title>
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium officia consectetur est saepe autem
+            excepturi. Ipsum autem, sapiente pariatur adipisci earum aut omnis, aliquid nihil mollitia officia obcaecati
+            laboriosam. Tempore eaque non saepe! Vero debitis distinctio deleniti explicabo veritatis natus, optio
+            inventore minus consectetur fugiat autem soluta eum aperiam assumenda, necessitatibus esse, nulla vel quia.
+            Dolorem dicta nesciunt ipsa quisquam culpa tempore dolores rem, earum corporis totam placeat, recusandae
+            assumenda ipsum voluptatem vero voluptas a officiis labore deleniti iusto expedita! Labore et, culpa,
+            perspiciatis ex quis error corrupti iure alias obcaecati, voluptate cum! Hic assumenda asperiores molestiae
+            ea officiis!
+        </p>
+        <span>Text Text</span>
+    </div>
+    <div>
+        <div>
+            <div>
+                <h1>
+                    <Title></Title>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium officia consectetur est
+                    saepe autem
+                    excepturi. Ipsum autem, sapiente pariatur adipisci earum aut omnis, aliquid nihil mollitia officia
+                    obcaecati
+                    laboriosam. Tempore eaque non saepe! Vero debitis distinctio deleniti explicabo veritatis natus,
+                    optio
+                    inventore minus consectetur fugiat autem soluta eum aperiam assumenda, necessitatibus esse, nulla
+                    vel quia.
+                    Dolorem dicta nesciunt ipsa quisquam culpa tempore dolores rem, earum corporis totam placeat,
+                    recusandae
+                    assumenda ipsum voluptatem vero voluptas a officiis labore deleniti iusto expedita! Labore et,
+                    culpa,
+                    perspiciatis ex quis error corrupti iure alias obcaecati, voluptate cum! Hic assumenda asperiores
+                    molestiae
+                    ea officiis!
+                </p>
+                <span>Text Text</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
